@@ -1,0 +1,14 @@
+https://www.baeldung.com/thread-pool-java-and-guava
+https://www.baeldung.com/java-executor-service-tutorial
+https://www.baeldung.com/java-8-parallel-streams-custom-threadpool
+https://www.baeldung.com/java-executor-wait-for-threads
+https://www.baeldung.com/java-concurrency
+https://www.baeldung.com/java-fork-join
+
+https://www.google.com/search?q=where+is+the+stack+and+heap&oq=where+is+the+stack+and+heap
+https://www.baeldung.com/java-memory-leaks
+https://www.baeldung.com/java-treemap-vs-hashmap
+https://www.baeldung.com/java-treemap
+
+
+http://tutorials.jenkov.com/java-concurrency/index.html

@@ -1,0 +1,16 @@
+use a hashtable to get random element
+// defined staticly
+Field table = HashMap.class.getDeclaredField("table");
+table.setAccessible(true);
+Random rand = new Random();
+
+public Entry randomEntry(HashMap map) {
+    Entry[] entries = (Entry[]) table.get(map);
+    int start = rand.nextInt(entries.length);
+    for(int i=0;i<entries.length;i++) {
+       int idx = (start + i) % entries.length;
+       Entry entry = entries[idx];
+       if (entry != null) return entry;
+    }
+    return null;
+}

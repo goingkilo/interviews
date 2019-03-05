@@ -1,0 +1,12 @@
+ * lift bigger weights *
+
+ create a database of billion entities.
+ let them have a uuid and/or random sequence.
+ calculate how long it takes to do these things
+
+ store them in a db. does it work ?
+ do you need a db cluster ? will redis do ? how would cassandra do this ?
+ do operations on this data set. simple stuff that you do every day but at scale.
+    like a billion people voting
+    does it work flawlessly ?
+    can you hit up on the cap theorem there ?

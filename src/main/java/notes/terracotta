@@ -1,0 +1,31 @@
+
+
+      company party/function
+      employees entering and leaving at all times.
+      every N min pick a random employee,
+      optimal datastructures
+
+      array of booleans marking present/false
+      map of employee id to array index
+
+      extended problem
+      now there are three gates,
+      employees can enter /exit through any
+      how will the original solution scale here
+        java arrays thread safe
+
+    when to use wait-notify vs synchronized
+
+
+    how to pick random element ?
+    use set, keep generating random numbers, until you find an array position that is true.
+    get employee id to
+
+
+    threado problem
+    volatile ? what order, how to achieve 1,1,1
+
+    concurrent hashmap, how is it different from hashtable
+    why override hashcode and equals
+
+    // optimistic locking?

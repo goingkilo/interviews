@@ -1,0 +1,21 @@
+
+
+take a document D from the internet, probably gutenberg
+
+generate N random numbers as S
+read the document character by character
+    whenever a new character is found, map it to one of the generated random numbers in D, no duplicates ie not two input
+    characters map to the same item in in S, and that each unique character in D is mapped to only one item in S
+    store this mapping as K
+
+lookup replace every character in D using K.
+
+you have encrypted D with K
+
+Now, generate two such mappings - K1 and K2 , set an arbitrary block size B such that B < D
+for every B characters , switch the lookup-replace between K1 and K2 . Now you have done blocks !
+
+
+// word frequency count
+// character frequency count
+//

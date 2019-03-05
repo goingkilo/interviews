@@ -1,0 +1,13 @@
+1. how slow are instrumented end points compared to non metered ones -dropwizard vs jersey ?
+2. can you build a mysql cluster such that
+    2.1 writes are replicated to the RO slave ?
+    2.2 rows A-J are in node 1 and K-Z are in node 2
+3. Do the same thing with redis
+
+4. How do elasticsearch queries work ? what are the mechanisms, types, options ..?  how do you tune ?
+    how does the lucene algorithm work ?
+
+5. how is the location ecosystem organised ? what is S2, spatialJ , JTS, postGIS ? can you use ES to search location ?
+    what is quadtree, union-find/disjoint set, trie/prefix tree
+6. four types of nosql, pros & cons
+7.

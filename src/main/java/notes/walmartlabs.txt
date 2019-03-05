@@ -1,0 +1,162 @@
+Hi!
+
+Hi!
+
+
+
+	  A
+      B	          B
+   D       E   E     D
+F                          F
+
+
+
+
+
+
+
+
+Class walmartlabs.Node {
+	String data;
+	walmartlabs.Node l,r;
+	Public walmartlabs.Node(String s){
+		This.data =s;
+}
+}
+
+boolean compare ( walmartlabs.Node n1, walmartlabs.Node n2) {
+	if( n1 == null && n2 == null )
+return true;
+	if( (n1 == null && n2 != null) || (n1 != null && n2 = null) )
+return false;
+
+	if( n1.data.equals(n2.data)) {
+return	Compare ( n1.l , n2.r)
+&&
+Compare ( n1.r, n2.l);
+
+	}
+Else {
+	Return false;
+}
+}
+
+Boolean compare( walmartlabs.Node n){
+	Return compare( n.l, n.r);
+}
+
+
+
+         		     5
+ 23       		  1
+      21  	     10  	      2  		78
+39     56           	           80
+
+
+6th smaller element in the tree?
+
+
+
+
+
+
+class SnakeLadder {
+	int size;
+	List<Pair> pairs;
+	//cache
+	Map<Integer,Pair>  snakesOrLadder;
+	Set<Integer> loopSquares;
+	Boolean[] loopArray = new Boolean[size];
+
+}
+initGame() {
+	Pairs = createSnakesAndLadders();
+}
+List<Pair> createSnakesAndLadders(){
+	//strategy 1 no snake or ladder
+	checkLoops
+}
+class Pair {
+	int start, end;
+	//final pos
+	Type type;
+}
+Enum Type {SNAKE,LADDER};
+
+
+
+Int getNext( int i) {
+	if( loopArray[i] ){
+		//don’t go there
+	}
+	if( loopSqaures.contains(i))
+	// don’t go there
+	}
+	if( ! snakesOrLadder.contains(i)) {
+		Return i
+	}
+	Int sqr = i;
+
+	Set<Integer> visited = new HashSet<>();
+	while( snakesOrLadder.contains( sqr) ){
+		visited.add( sqr);
+		pair = snakesOrLadder.get(sqr);
+		Sqr = pair.end;
+		If (visited.contains( sqr)) {
+			//loopSquares.add(i)
+			loopArray[i] = true;
+		}
+	}
+}
+
+}
+checkLoops( list<pair> , visited){
+}
+95-56-78-95
+
+Map<Animal, Pet>
+A1
+
+
+
+
+
+
+
+
+
+
+
+Class A {
+	static int X;
+}
+
+Animal a;
+
+
+Thread T1 → Animal a1, Y y;
+Thread T2 → Animal a2, Y y;
+
+Class Y {
+Animal a;
+update() {
+sync(A.class) {
+		a.X++;
+}
+
+
+}
+Y y = new Y();
+T1
+y.setA( T1.this.a1)
+update()
+
+T2
+y.setA( T1.this.a2)
+update()
+
+tree to balanced bst conversion
+java garbage collection - generations, difference between small & full gc, tools
+java hashmap implementation
+
+

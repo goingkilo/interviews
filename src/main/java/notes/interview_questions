@@ -1,0 +1,56 @@
+mangesh / coupons r
+
+re entrant lock
+conditional variable
+bounded buffer
+circular
+LRU cache
+doubly linked list
+
+SAP-Ariba
+lots of requests coming in, what ds will you use
+message queue system
+distributed cache
+
+gojek
+ride hailing
+
+paypal
+    LRU cache
+    Delivery system
+
+Honestbee
+all india voting system 1 bill in 5 min
+
+mmt
+linkedin
+
+oracle
+object pool
+
+myntra
+google news
+chessboard
+tag based search service
+
+
+swiggy
+  design ad auction server
+    qps,
+  snake and ladder,  OOPS
+  path through a maze, recursive code
+  design a delivery time calculator b/w warehouse,city,delivery vendor
+    elasticsearch vs mongo, off heap,
+
+vmware
+tele
+    nth largest elementto
+ 1. sliding window of k in a list of n items, print largest at each move.
+     linklist + map to address of node in heap
+ 2. Blocking queue
+ 3. design a scalable scheduling system ?
+??
+ 1. link list 1-2-3-4-5 print 1-5-2-4-3
+ 2. print branching tree leaves first
+ 3. sum of sub matrix
+ 3. executorservice
