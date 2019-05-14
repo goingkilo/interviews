@@ -1,0 +1,127 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
+
+public class DDL {
+
+    Map<String,Node> nodes   = new HashMap<>();
+
+    class Node {
+        String key;
+        int inCount;
+
+        List<Node> edgesOUt;
+
+        public Node(String key) {
+            this.key = key;
+            edgesOUt = new ArrayList<>();
+        }
+
+
+        public void addEdgeIn(){
+            inCount++;
+        }
+
+        public void addOutEdge(Node i){
+            edgesOUt.add(i);
+        }
+    }
+
+    void createGraph(List<String[]> pairs){
+
+        Map<Integer,Node> graphs = new HashMap<>();
+
+        for( String[] p : pairs){
+
+            if( p.length == 1){
+                String start = p[0].trim();
+                Node n1;
+                if (nodes.containsKey(start)) {
+                    n1 = nodes.get(start);
+                } else {
+                    n1 = new Node(start);
+                    nodes.put(start,n1);
+                }
+            }
+            else {
+                String start = p[0].trim();
+                String end = p[1].trim();
+
+                Node n1, n2;
+                if (nodes.containsKey(start)) {
+                    n1 = nodes.get(start);
+                } else {
+                    n1 = new Node(start);
+                    nodes.put(start, n1);
+                }
+
+                if (nodes.containsKey(end)) {
+                    n2 = nodes.get(end);
+                } else {
+                    n2 = new Node(end);
+                    nodes.put(end, n2);
+                }
+
+                n1.addOutEdge(n2);
+                n2.addEdgeIn();
+            }
+        }
+    }
+
+    List<Node> getRootNodes(){
+        return nodes
+                .values()
+                .stream()
+                .filter(t -> t.inCount == 0)
+                .collect(Collectors.toList());
+    }
+
+    void drawPath(Node n, List<String> soFar){
+
+        soFar.add(n.key);
+        if( n.edgesOUt != null && n.edgesOUt.size() > 0){
+            for( Node n1 : n.edgesOUt){
+                drawPath(n1, new ArrayList<String>(soFar));
+            }
+        }
+        else {
+            System.out.println(String.join( "-<>", soFar));
+        }
+    }
+
+    void drawPaths(){
+        List<Node> l = getRootNodes();
+        for( Node n : l){
+            drawPath(n, new ArrayList<String>());
+        }
+    }
+
+
+    public static void main(String args[]) throws IOException {
+//        DDL d = new DDL();
+//        List<String[]> pairs = new ArrayList<String[]>(){{
+//            add( new String[]{"0","1"});
+//            add( new String[]{"0","2"});
+//            add( new String[]{"1","3"});
+//            add( new String[]{"1","5"});
+//            add( new String[]{"2","5"});
+//            add( new String[]{"6","2"});
+//            add( new String[]{"4"});
+//        }
+//
+//
+//        };
+//        d.createGraph(pairs);
+//        d.drawPaths();
+
+
+       vi instanceof
+     }
+
+}
+

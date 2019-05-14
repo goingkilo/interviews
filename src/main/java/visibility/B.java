@@ -17,17 +17,18 @@ public class B extends A {
 //
 //    }
 
-//    @Override
-//    void packageProtectedMethod(){
-//        System.out.println("B.packageProtectedMethod");
-//
-//    }
+    @Override
+    void packageProtectedMethod(){
+        System.out.println("B.packageProtectedMethod");
+//        java.util.EnumSet.
 
-//    @Override
-//    protected void protectedMethod(){
-//        System.out.println("B.protectedMethod");
-//
-//    }
+    }
+
+    @Override
+    protected void protectedMethod(){
+        System.out.println("B.protectedMethod");
+
+    }
 
     public static void main(String[] args) {
 
